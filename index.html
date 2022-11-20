@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">ADVENTURE</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">About</a></li>
+        <li><a class="ctn" href="#">Contact</a></li>
+      </ul>
+      <img src="./menu-btn.png" alt="" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h2>Explore the colorfull word</h2>
+        <div class="line"></div>
+        <h1>A WONDERFULL GIFT</h1>
+        <a href="#" class="ctn">Learn more</a>
+      </div>
+    </header>
+    <section class="events">
+      <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./images/mountain clime.jpg" alt="" />
+          <h4>Everest camp trek</h4>
+          <p>climing in ice and traveling in rever is a great experence</p>
+          <a href="#" class="ctn">Learn more</a>
+        </div>
+        <div class="col">
+          <img src="./images/rever.jpg" alt="" />
+          <h4>Rever with cool place</h4>
+          <p>climing in ice and traveling in rever is a great experence</p>
+          <a href="#" class="ctn">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore">
+      <div class="explore-content">
+        <h1>Explore the world</h1>
+        <div class="line"></div>
+        <p>a great experence</p>
+        <a href="#" class="ctn">Learn more</a>
+      </div>
+    </section>
+
+    <section class="tours">
+      <div class="row">
+        <div class="col" content-col>
+          <h1>upcoming tours and destination</h1>
+          <div class="line"></div>
+          <p>upcoming tours and destination traveling places</p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col image-col">
+          <div class="image-gallery">
+            <img src="./images/city light in ocean.jpg" alt="" />
+            <img src="./images/sitting with laptop.jpg" alt="" />
+            <img src="./images/mountain with baby.jpg" alt="" />
+            <img src="./images/with cycle.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener(" click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
